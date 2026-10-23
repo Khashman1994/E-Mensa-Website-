@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren Team 605:
+- Khashman, Alturki, 3826720
+- 	Mohammad,fahim ,Matrikelnummer2
+-->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box {
+            background-color: lightgray;
+            padding: 15px;
+            border: 1px solid #a58484;
+        }
+       .grid-untereinander{
+           display: grid;
+           gap: 10px;
+           margin-bottom: 10px;
+       }
+       .grid-nebeneinander{
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           gap: 10px;
+           margin-bottom: 10px;
+       }
+
+       .grid-einzeln-zentriert{
+           display: grid;
+           place-items:center ;
+           height: 150px;
+
+       }
+
+    </style>
+</head>
+<body>
+    <h2>1) Drei Elemente untereinander</h2>
+    <div class="grid-untereinander">
+        <div class="box">Element 1</div>
+        <div class="box">Element 2</div>
+        <div class="box">Element 3</div>
+    </div>
+
+
+    <h2>1) Drei Elemente untereinander</h2>
+    <div class="grid-nebeneinander">
+        <div class="box">Element 1</div>
+        <div class="box">Element 2</div>
+        <div class="box">Element 3</div>
+    </div>
+
+    <h2>3) Ein Element zentriert</h2>
+    <div class="grid-einzeln-zentriert">
+        <div class="box">zentriert!</div>
+    </div>
+</body>
+</html>

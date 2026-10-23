@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren Team 605:
+- Khashman, Alturki, 3826720
+- 	Mohammad,fahim ,Matrikelnummer2
+-->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Newsletter-Anmeldung</title>
+</head>
+<body>
+
+<form action="beispiele/form_data.html" method="post">
+
+    <p>Anrede</p>
+    <p>
+        <input type="radio" id="anrede_frau" name="anrede" value="frau">
+        <label for="anrede_frau">Frau</label>
+
+        <input type="radio" id="anrede_herr" name="anrede" value="herr">
+        <label for="anrede_herr">Herr</label>
+
+        <input type="radio" id="anrede_divers" name="anrede" value="divers">
+        <label for="anrede_divers">Divers</label>
+    </p>
+
+    <p>
+        <label for="vorname">Vorname*</label>
+        <input type="text" id="vorname" name="vorname" placeholder="Bitte geben Sie Ihren Vornamen ein" required>
+    </p>
+
+    <p>
+        <label for="nachname">Nachname*</label>
+        <input type="text" id="nachname" name="nachname" placeholder="Bitte geben Sie Ihren Nachnamen ein" required>
+    </p>
+
+    <p>
+        <label for="email">E-Mail*</label>
+        <input type="email" id="email" name="email" placeholder="Bitte geben Sie Ihre E-Mail ein" required>
+    </p>
+
+    <p>
+        <label for="intervall">Benachrichtigungsintervall</label>
+        <select id="intervall" name="benachrichtigungsintervall">
+            <option value="tag">Tag</option>
+            <option value="woche" selected>Woche</option>
+            <option value="monat">Monat</option>
+        </select>
+    </p>
+
+    <p>
+        <input type="checkbox" id="datenschutz" name="datenschutz" required>
+        <label for="datenschutz">Datenschutz</label>
+    </p>
+
+    <p>
+        <button type="submit" id="button">Abschicken</button>
+    </p>
+    <p>
+        *Eingaben sind Pflicht
+    </p>
+
+</form>
+</body>
+</html>

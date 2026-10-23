@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren Team 605:
+- Khashman, Alturki, 3826720
+- 	Mohammad,fahim ,Matrikelnummer2
+-->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Ihre E-Mensa</title>
+
+    <style>
+        /* Allgemeine Seiteneinstellungen */
+        body {
+            font-family: sans-serif;
+            margin: 20px 40px;
+            color: #333;
+        }
+
+        /* Navigation oben */
+        nav {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #0c0c0c;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #131313;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #cdd1ac;
+        }
+
+        /* Überschriften */
+        h1::first-letter, h2::first-letter {
+            font-size: 130%;
+            color: #10100f;
+        }
+
+        /* Tabellen-Styling */
+        table {
+            border-collapse: separate;
+            border-spacing: 2px;
+            width: auto;
+            border: 1px solid #100f0f;
+            padding: 2px;
+            margin-bottom: 30px;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            padding: 8px;
+            line-height: 1.5;
+            vertical-align: middle;
+        }
+
+        /* E-Mensa in Zahlen */
+        .zahlen-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0 40px 0;
+            text-align: center;
+        }
+
+        .zahl {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        /* Formular-Styling */
+        .newsletter-form {
+            margin: 20px 0 40px 0;
+        }
+
+        .form-zeile {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 15px;
+        }
+
+        .input-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-box label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .input-box input, .input-box select {
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-zeile-unten {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 600px;
+        }
+
+        .btn-submit {
+            padding: 6px 16px;
+            border-radius: 12px;
+            border: 1px solid #999;
+            background-color: #e0e0e0;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        /* Liste "Das ist uns wichtig" */
+        #wichtig-fuer-uns ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding-top: 15px;
+            border-top: 1.5px solid #0c0b0b;
+        }
+
+        .footer-style {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-style a {
+            text-decoration: none;
+            color: #131313;
+        }
+
+        .footer-style a:hover {
+            color: #0e0e0e;
+        }
+        /* Kasten um die Ankündigung */
+        #ankuendigung {
+            border: 1px solid #131312;
+            padding: 15px 20px;
+            border-radius: 6px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="#ankuendigung">Ankündigung</a>
+    <a href="#speisen">Speisen</a>
+    <a href="#zahlen">Zahlen</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#wichtig-fuer-uns">Wichtig für uns</a>
+</nav>
+<h1>Bald gibt es Essen auch online ?</h1>
+<div id="ankuendigung">
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+</div>
+
+
+<div id="speisen">
+    <h1>Köstlichkeiten, die Sie erwarten</h1>
+    <table>
+
+        <tr>
+            <th></th>
+            <th>Preis intern</th>
+            <th>Preis extern</th>
+        </tr>
+
+        <tbody>
+        <tr>
+            <td>Rindfleisch mit Bambus, Kaiserschoten und rotem Paprika, dazu Mie Nudeln</td>
+            <td>3,50</td>
+            <td>6,20</td>
+        </tr>
+        <tr>
+            <td>Spinatrisotto mit kleinen Samosateigecken und gemischter Salat</td>
+            <td>2,90</td>
+            <td>5,30</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+    </table>
+</div>
+
+<section id="zahlen">
+    <h2>E-Mensa in Zahlen</h2>
+
+    <div class="zahlen-container">
+        <div class="zahlen-item">
+            <span class="zahl">x</span> Besuche
+        </div>
+        <div class="zahlen-item">
+            <span class="zahl">y</span> Anmeldungen zum Newsletter
+        </div>
+        <div class="zahlen-item">
+            <span class="zahl">z</span> Speisen
+        </div>
+    </div>
+</section>
+
+<section id="kontakt">
+    <h2>Interesse geweckt? Wir informieren Sie!</h2>
+
+    <form action="beispiele/form_data.html" method="post" class="newsletter-form">
+        <div class="form-zeile">
+            <div class="input-box">
+                <label for="name">Ihr Name:</label>
+                <input type="text" id="name" name="vorname" placeholder="Vorname" required>
+            </div>
+
+            <div class="input-box">
+                <label for="email">Ihre E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="sprache">Newsletter bitte in:</label>
+                <select id="sprache" name="sprache">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-zeile-unten">
+            <div>
+                <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                <label for="datenschutz">Den Datenschutzbestimmungen stimme ich zu</label>
+            </div>
+
+            <button type="submit" disabled class="btn-submit">Zum Newsletter anmelden</button>
+        </div>
+    </form>
+</section>
+<section id="wichtig-fuer-uns">
+    <h2>Das ist uns wichtig</h2>
+    <div>
+        <ul>
+            <li>Beste frische saisonale Zutaten</li>
+            <li>Ausgewagene abwecheslungsreiche Gerichte</li>
+            <li>Sauberkeit</li>
+        </ul>
+    </div>
+</section>
+
+
+<footer>
+    <ul class="footer-style">
+        <li>(c) E-Mensa GmbH</li>
+        <li>(c) Khashman Alturki</li>
+        <li><a href="#">Impressum</a></li>
+    </ul>
+</footer>
+</body>
+</html>
